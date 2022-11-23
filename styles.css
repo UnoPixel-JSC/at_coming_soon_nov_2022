@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat-VariableFont_wght.ttf")
+    format("opentype-variations");
+  font-weight: 400 700;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/./Roboto-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/./Roboto-Bold.ttf");
+  font-weight: 700;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 20px 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto";
+  text-align: center;
+
+  background: radial-gradient(
+    85.37% 104.29% at 84.13% 96.35%,
+    #c3e4c6 0%,
+    #ddf3e4 78.9%,
+    #d4edde 100%
+  );
+}
+
+#background-circles {
+  position: absolute;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transform: rotate(180deg);
+  z-index: -1;
+}
+
+#logo {
+  max-width: 200px;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+h1 {
+  font-family: "Montserrat";
+  font-size: max(50px, 6vw);
+  background: linear-gradient(
+    89.23deg,
+    #0b5d65 18.61%,
+    rgba(153, 195, 82, 0.56) 108.29%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+}
+
+summary {
+  color: #0b5d65;
+  margin-top: 5px;
+}
+
+#cta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+a,
+a:-webkit-any-link {
+  color: #0b5d65;
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+form > input {
+  border: none;
+
+  width: 360px;
+  height: 56px;
+  background: #ffffff;
+  border-radius: 28px;
+  padding-inline: 20px;
+  box-sizing: border-box;
+}
+
+form > input:focus-visible {
+  outline: #0b5d65 auto 1px;
+}
+
+form > button {
+  border: none;
+
+  width: 160px;
+  height: 56px;
+  background: linear-gradient(
+    89.23deg,
+    #0b5d65 18.61%,
+    rgba(153, 195, 82, 0.56) 108.29%
+  );
+  border-radius: 28px;
+
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+footer {
+  font-size: 14px;
+  text-align: center;
+  color: #000000;
+  opacity: 0.4;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding-top: 0 !important;
+    padding-bottom: 15px;
+  }
+
+  form {
+    flex-direction: row;
+  }
+}
